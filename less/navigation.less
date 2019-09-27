@@ -1,1 +1,29 @@
 // Navigation Styles here
+
+.nav-bar {
+    .displayFlex(center, center);
+    padding: 25px;
+    border-bottom: @dash-line;
+
+    .nav-content {
+        width: 800px;
+        .displayFlex(space-between, center);
+
+        h1 {
+            .displayFlex(center, center);
+        }
+    
+        nav {
+            width: 50%;   
+            .displayFlex(space-around, center);
+
+            a {
+                text-decoration: none;
+                color: @shark;
+                font-size: 1.5rem;
+                font-weight: bold;
+            }
+        }    
+    }
+}
+
