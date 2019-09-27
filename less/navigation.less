@@ -5,17 +5,35 @@
     padding: 25px;
     border-bottom: @dash-line;
 
+    @media @mobile {
+        padding: 5px;
+        border-bottom: @dash-line;
+    }
+
     .nav-content {
         width: 800px;
         .displayFlex(space-between, center);
 
+        @media @mobile {
+            display: flex;
+            flex-direction: column;
+        }
+
         h1 {
             .displayFlex(center, center);
+
+            @media @mobile {
+                margin: 10px;
+            }
         }
     
         nav {
             width: 50%;   
             .displayFlex(space-around, center);
+
+            @media @mobile {
+                width: 75%;
+            }
 
             a {
                 text-decoration: none;
